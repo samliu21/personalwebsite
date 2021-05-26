@@ -5,6 +5,8 @@
     margin: 0px;
     padding: 0px;
     font-family: -apple-system, sans-serif;
+    color: white;
+    box-sizing: border-box;
 }
 p {
     line-height: 1.5em;
@@ -12,6 +14,19 @@ p {
 a {
     color: white;
     text-decoration: none;
+}
+input {
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: var(--darkblue) 2px solid;
+}
+label {
+    font-size: 2.5vh;
 }
 .navitem:hover {
     color: var(--darkblue);
@@ -49,17 +64,48 @@ a {
     flex-grow: 0;
     height: 50vh;
     float: left;
+    margin-left: 20vw;
 }
 #introduction {
     flex-grow: 1;
     color: white;
     float: right;
-    padding: 30px;
-    font-size: 3vh;
+    padding-left: 5vw;
+    font-size: 2.5vh;
+}
+#contact {
+    background-image: url("https://images.hdqwalls.com/download/windows-10-landscape-1366x768.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+#submit-button {
+    background-color: var(--darkblue);
+    width: 40%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.5vh;
+    border: white 1px solid;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact-form {
+    background: #383D4860;
+    height: 80%;
+    width: 50%;
+    border-radius: 5vh;
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);  
+    margin: auto;
+    padding: 4vmin;
 }
 .navitem {
     color: white;
-    background-color: #383D48;
+    background-color: var(--darkblue);
     flex: 1;
     padding: 1.5vh;
     text-align: center;
@@ -89,4 +135,11 @@ a {
 .emphasis {
     font-weight: 600;
     font-size: 5vh;
+}
+/* Goes hand in hand with .fullwidth */
+.center {
+    text-align: center;
+}
+.fullwidth {
+    width: 100%;
 }
