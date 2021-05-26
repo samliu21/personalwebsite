@@ -1,0 +1,92 @@
+:root {
+    --darkblue: #383D48; 
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, sans-serif;
+}
+p {
+    line-height: 1.5em;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.navitem:hover {
+    color: var(--darkblue);
+    background-color: white;
+}
+#navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: var(--darkblue); */
+}
+#potrait-div {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-image: url("images/portrait.JPG");
+    background-position: 50% 20%;
+    background-repeat: none;
+    background-size: cover;
+}
+#under-portrait-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkblue);
+    padding: 30px 30px 30px 30px;
+    height: 60vh;
+}
+#winter-portrait {
+    flex-grow: 0;
+    height: 50vh;
+    float: left;
+}
+#introduction {
+    flex-grow: 1;
+    color: white;
+    float: right;
+    padding: 30px;
+    font-size: 3vh;
+}
+.navitem {
+    color: white;
+    background-color: #383D48;
+    flex: 1;
+    padding: 1.5vh;
+    text-align: center;
+}
+.name {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    color: white;
+    font-size: 5vh;
+}
+.small {
+    font-size: 3vmax;
+}
+.large {
+    font-size: 6vmax;
+}
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-weight: 600;
+}
+.green {
+    color: #AAA29D;
+}
+.emphasis {
+    font-weight: 600;
+    font-size: 5vh;
+}
