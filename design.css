@@ -1,6 +1,7 @@
 :root {
     --darkblue: #383D48; 
     --sand: #A39C84;
+    --blue: #87afed;
 }
 * {
     margin: 0px;
@@ -31,6 +32,10 @@ input[type="text"], input[type="email"] {
 }
 span, div {
     overflow-y: hidden;
+}
+li {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Homepage */
@@ -82,7 +87,7 @@ span, div {
     justify-content: space-between;
     align-items: center;
     background-color: var(--darkblue);
-    padding: 60px 30px 60px 30px;
+    padding: 15vh 4vw 15vh 4vw;
 }
 #winter-portrait {
     flex-grow: 0;
@@ -127,7 +132,7 @@ span, div {
 /* Self introduction */
 #self-introduction-div {
     background-color: var(--darkblue);
-    padding: 6vmin;
+    padding: 15vh 4vw 15vh 4vw;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -140,6 +145,11 @@ span, div {
     flex: 75%;
     padding-right: 3vw;
     padding-left: 5vw;
+}
+
+/* Book */
+#book-div {
+    background-image: url("images/book.jpg");
 }
 
 /* Social media */
@@ -190,6 +200,9 @@ span, div {
 .subheading-font {
     font-size: 3vmax;
 }
+.subheading2-font {
+    font-size: 2vmax;
+}
 .p1 {
     font-size: 1.5vmax;
 }
@@ -220,8 +233,22 @@ span, div {
     text-decoration: underline;
 }
 .link:hover {
-    color: #afc7ed;
+    color: var(--blue);
 }
 .lower-margin {
     margin-bottom: 25px;
+}
+.blue {
+    color: var(--darkblue);
+}
+.two-thirds {
+    text-align: right;
+    margin-right: 15vw;
+    margin-top: 20vh;
+}
+li {
+    color: var(--darkblue);
+}
+li:nth-child(even) {
+    color: var(--blue);
 }

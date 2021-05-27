@@ -7,7 +7,8 @@ $(function() {
         let regex = /^([\w-\.])+@([\w-\.])+[\w-]{2,4}?$/;
         return regex.test(email);
     }
-
+    
+    // Add user to email list
     $("#contact-submit-button").on("click", function(event) {
         event.preventDefault();
         
@@ -18,10 +19,13 @@ $(function() {
             alert("Added!");
         }
         else {
-            alert("Error adding your information. Please try agani!");
+            alert("Error adding your information. Please try again!");
         }
 
         name.val("");
         email.val("");
     })
+
+    // Make name dip upon hover 
+    $("")
 })
