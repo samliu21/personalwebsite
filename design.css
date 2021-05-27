@@ -58,7 +58,7 @@ span, div {
     flex: 40%;
     background-color: var(--darkblue);
     padding: 1.5vh;
-    padding-left: 5vw;
+    padding-left: 30%;
 }
 
 /* Portrait title screen */
