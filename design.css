@@ -29,7 +29,7 @@ input[type="text"], input[type="email"] {
     border: var(--darkblue) 2px solid;
     color: var(--darkblue);
 }
-span {
+span, div {
     overflow-y: hidden;
 }
 
@@ -53,6 +53,12 @@ span {
 .navitem:hover {
     color: var(--darkblue);
     background-color: white;
+}
+.nameitem {
+    flex: 40%;
+    background-color: var(--darkblue);
+    padding: 1.5vh;
+    padding-left: 5vw;
 }
 
 /* Portrait title screen */
@@ -80,7 +86,7 @@ span {
 }
 #winter-portrait {
     flex-grow: 0;
-    height: 90%;
+    height: 80%;
     width: auto;
     float: left;
     margin-left: 20vw;
@@ -117,15 +123,44 @@ span {
     background-position: 50% 50%;
     padding-left: 13%;
 }
+
 /* Self introduction */
 #self-introduction-div {
     background-color: var(--darkblue);
     padding: 6vmin;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
 }
+#cruise-picture {
+    flex: 25%;
+}
+#introductory-text {
+    flex: 75%;
+    padding-right: 3vw;
+    padding-left: 5vw;
+}
+
 /* Social media */
 #social-media-div {
     background-image: url("images/landscape2.jpg");
     background-position: center center;
+}
+.icon-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 15px;
+}
+.icon {
+    flex: 10%;
+    height: auto;
+}
+.icon-text {
+    flex: 90%;
+    padding-left: 2vw;
 }
 
 /* General */
@@ -156,7 +191,7 @@ span {
     font-size: 3vmax;
 }
 .p1 {
-    font-size: 1.7vmax;
+    font-size: 1.5vmax;
 }
 .p2 {
     font-size: 1.2vmax;
@@ -185,5 +220,8 @@ span {
     text-decoration: underline;
 }
 .link:hover {
-    color: var(--sand);
+    color: #afc7ed;
+}
+.lower-margin {
+    margin-bottom: 25px;
 }
