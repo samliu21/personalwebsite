@@ -1,21 +1,21 @@
 :root {
     --darkblue: #383D48; 
+    --sand: #A39C84;
 }
 * {
     margin: 0px;
-    padding: 0px;
     font-family: -apple-system, sans-serif;
     color: white;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Generic */
 p {
     line-height: 1.5em;
+    overflow-y: hidden;
 }
 a {
-    color: white;
     text-decoration: none;
 }
 input {
@@ -28,6 +28,9 @@ input[type="text"], input[type="email"] {
     border-radius: 20px;
     border: var(--darkblue) 2px solid;
     color: var(--darkblue);
+}
+span {
+    overflow-y: hidden;
 }
 
 /* Homepage */
@@ -73,17 +76,18 @@ input[type="text"], input[type="email"] {
     justify-content: space-between;
     align-items: center;
     background-color: var(--darkblue);
-    padding: 30px 30px 30px 30px;
-    height: 60vh;
+    padding: 60px 30px 60px 30px;
 }
 #winter-portrait {
     flex-grow: 0;
-    height: 50vh;
+    height: 90%;
+    width: auto;
     float: left;
     margin-left: 20vw;
 }
 #introduction {
     flex-grow: 1;
+    flex: 80%;
     color: white;
     float: right;
     padding-left: 5vw;
@@ -91,7 +95,7 @@ input[type="text"], input[type="email"] {
 
 /* Contact me */
 #contact {
-    background-image: url("https://images.hdqwalls.com/download/windows-10-landscape-1366x768.jpg");
+    background-image: url("images/landscape.jpg");
     position: relative;
 }
 #contact-submit-button {
@@ -104,9 +108,29 @@ input[type="text"], input[type="email"] {
     left: 50%;
     transform: translateX(-50%);
 }
-.contact-form {
+
+/* About Me Page */
+
+/* Title section */
+#title-section-div {
+    background-image: url("images/lights.jpg");
+    background-position: 50% 50%;
+    padding-left: 13%;
+}
+/* Self introduction */
+#self-introduction-div {
+    background-color: var(--darkblue);
+    padding: 6vmin;
+}
+/* Social media */
+#social-media-div {
+    background-image: url("images/landscape2.jpg");
+    background-position: center center;
+}
+
+/* General */
+.rounded-faded-background {
     background: #383D4860;
-    /* height: 80%; */
     width: 50%;
     border-radius: 5vh;
     position: relative; 
@@ -118,16 +142,6 @@ input[type="text"], input[type="email"] {
     padding-top: 10vmin;
     padding-bottom: 10vmin;
 }
-
-/* About Me Page */
-
-/* Title section */
-#title-section-div {
-    background-image: url("images/lights.jpg");
-    padding-left: 13%;
-}
-
-/* General */
 .cover-screen {
     width: 100vw;
     height: 100vh;
@@ -166,4 +180,10 @@ input[type="text"], input[type="email"] {
 }
 .blue {
     color: var(--darkblue);
+}
+.link {
+    text-decoration: underline;
+}
+.link:hover {
+    color: var(--sand);
 }
