@@ -7,7 +7,10 @@
     font-family: -apple-system, sans-serif;
     color: white;
     box-sizing: border-box;
+    overflow: hidden;
 }
+
+/* Generic */
 p {
     line-height: 1.5em;
 }
@@ -19,37 +22,50 @@ input {
     margin-bottom: 5%;
     margin-top: 2%;
 }
-input[type="text"] {
+input[type="text"], input[type="email"] {
     width: 100%;
     padding: 10px;
     border-radius: 20px;
     border: var(--darkblue) 2px solid;
-}
-label {
-    font-size: 2.5vh;
-}
-.navitem:hover {
     color: var(--darkblue);
-    background-color: white;
 }
+
+/* Homepage */
+
+/* Navigation bar */
 #navbar {
     display: flex;
     flex-direction: row;
     width: 100vw;
     align-items: center;
     justify-content: space-around;
-    /* background-color: var(--darkblue); */
 }
+.navitem {
+    color: white;
+    background-color: var(--darkblue);
+    flex: 1;
+    padding: 1.5vh;
+    text-align: center;
+}
+.navitem:hover {
+    color: var(--darkblue);
+    background-color: white;
+}
+
+/* Portrait title screen */
 #potrait-div {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
     text-align: center;
     background-image: url("images/portrait.JPG");
     background-position: 50% 20%;
-    background-repeat: none;
-    background-size: cover;
 }
+#name {
+    position: absolute;
+    width: 100%;
+    top: 10%;
+    color: white;
+}
+
+/* More about me */
 #under-portrait-div {
     display: flex;
     flex-direction: row;
@@ -71,22 +87,18 @@ label {
     color: white;
     float: right;
     padding-left: 5vw;
-    font-size: 2.5vh;
 }
+
+/* Contact me */
 #contact {
     background-image: url("https://images.hdqwalls.com/download/windows-10-landscape-1366x768.jpg");
-    width: 100vw;
-    height: 100vh;
-    background-repeat: none;
-    background-size: cover;
     position: relative;
 }
-#submit-button {
+#contact-submit-button {
     background-color: var(--darkblue);
     width: 40%;
     border-radius: 20px;
     padding: 10px;
-    font-size: 1.5vh;
     border: white 1px solid;
     position: relative;
     left: 50%;
@@ -94,34 +106,46 @@ label {
 }
 .contact-form {
     background: #383D4860;
-    height: 80%;
+    /* height: 80%; */
     width: 50%;
     border-radius: 5vh;
     position: relative; 
     top: 50%;
     transform: translateY(-50%);  
     margin: auto;
-    padding: 4vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    padding-top: 10vmin;
+    padding-bottom: 10vmin;
 }
-.navitem {
-    color: white;
-    background-color: var(--darkblue);
-    flex: 1;
-    padding: 1.5vh;
-    text-align: center;
+
+/* About Me Page */
+
+/* Title section */
+#title-section-div {
+    background-image: url("images/lights.jpg");
+    padding-left: 13%;
 }
-.name {
-    position: absolute;
-    width: 100%;
-    top: 10%;
-    color: white;
-    font-size: 5vh;
+
+/* General */
+.cover-screen {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    background-repeat: none;
+    background-size: cover;
 }
-.small {
+.big-title {
+    font-size: 6vmax;
+}
+.subheading-font {
     font-size: 3vmax;
 }
-.large {
-    font-size: 6vmax;
+.p1 {
+    font-size: 1.7vmax;
+}
+.p2 {
+    font-size: 1.2vmax;
 }
 .italic {
     font-style: italic;
@@ -129,17 +153,17 @@ label {
 .bold {
     font-weight: 600;
 }
-.green {
-    color: #AAA29D;
-}
-.emphasis {
-    font-weight: 600;
-    font-size: 5vh;
-}
-/* Goes hand in hand with .fullwidth */
-.center {
+.center-horizontal {
     text-align: center;
 }
-.fullwidth {
-    width: 100%;
+.center-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bottom-margin {
+    margin-bottom: 2vh;
+}
+.blue {
+    color: var(--darkblue);
 }

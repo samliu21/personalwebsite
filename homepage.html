@@ -7,22 +7,22 @@
         <title>Sam</title>
         <link rel="stylesheet" type="text/css" href="design.css" />
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="website.js"></script>
+        <script src="script.js"></script>
     </head>
     <body>
         <!-- Navigation bar -->
         <div id="navbar">
-            <a href="aboutme.html" class="navitem">Home</a>
-            <span class="navitem">About Me</span>
-            <a href="https://github.com/samliu21" class="navitem" target="_blank">Resume</a>
-            <span class="navitem">GitHub</span>
+            <a href="homepage.html" class="navitem">Home</a>
+            <a href="aboutme.html" class="navitem">About Me</a>
+            <a href="https://github.com/samliu21" class="navitem" target="_blank">GitHub</a>
+            <span class="navitem">Resume</span>
         </div>
 
         <!-- Title screen -->
-        <div id="potrait-div">
-            <p class="small name">
+        <div id="potrait-div" class="cover-screen">
+            <p id="name" class="subheading-font">
                 Hi, I'm <br />
-                <span class="large italic">
+                <span class="big-title italic">
                     —
                     <span class="bounce">Sam Liu</span>
                     —
@@ -38,9 +38,9 @@
                 id="winter-portrait"
             />
             <div id="introduction">
-                <p class="emphasis">Hello again, I'm Sam!</p>
+                <p class="subheading-font bold">Hello again, I'm Sam!</p>
                 <br />
-                <p>
+                <p class="p1">
                     I'm a graduating grade twelve student heading to the
                     University of Waterloo to study computer science in the
                     fall. In my spare time, I enjoy playing the guitar, going
@@ -48,21 +48,21 @@
                     new favourite fantasy book. 
                 </p>
                 <br>
-                <p>
+                <p class="p1">
                     Click on the
                     <span class="italic">About Me</span> page to learn more!
                 </p>
             </div>
         </div>
 
-        <div id="contact" style="vertical-align: middle;">
-            <form class="contact-form">
-                <p class="emphasis center fullwidth">Contact Me</p>
+        <div id="contact" class="cover-screen">
+            <form class="contact-form p2">
+                <p class="subheading-font bold center-horizontal bottom-margin">Contact Me</p>
                 <label for="username">Name</label><br>
                 <input type="text" id="username"><br>
                 <label for="useremail">Email</label><br>
-                <input type="text"><br>
-                <input type="submit" id="submit-button">
+                <input type="email" id="useremail"><br>
+                <input type="submit" id="contact-submit-button" class="p2">
             </form>
         </div>
     </body>
