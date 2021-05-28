@@ -98,15 +98,13 @@ li:hover {
     padding: 10vh 4vw 10vh 4vw;
 }
 #winter-portrait {
-    flex-grow: 0;
-    height: 80%;
-    width: auto;
+    flex: 0 0 auto;
+    width: 25vw; 
     float: left;
     margin-left: 20vw;
 }
 #introduction {
-    flex-grow: 1;
-    flex: 80%;
+    flex: 1 1 50vw;
     color: white;
     float: right;
     padding-left: 5vw;
@@ -172,12 +170,15 @@ li:hover {
     align-items: center;
     padding-top: 15px;
 }
+.wrapper {
+    flex: 0 0 10%;
+}
 .icon {
-    flex: 10%;
-    height: auto;
+    width: 100%;
+    /* width: 50px; */
 }
 .icon-text {
-    flex: 90%;
+    flex: 1 1 90%;
     padding-left: 2vw;
 }
 
@@ -269,6 +270,7 @@ li:hover {
 
     #winter-portrait {
         margin-left: 10vw;
+        width: 35vw;
     }
 
     .rounded-faded-background {
