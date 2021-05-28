@@ -33,10 +33,6 @@ input[type="text"], input[type="email"] {
 div {
     overflow-y: hidden;
 }
-li {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 
 /* Homepage */
 
@@ -69,7 +65,7 @@ li {
 /* Portrait title screen */
 #potrait-div {
     text-align: center;
-    background-image: url("images/portrait.JPG");
+    background-image: url("../images/portrait.JPG");
     background-position: 50% 20%;
 }
 #name {
@@ -106,7 +102,7 @@ li {
 
 /* Contact me */
 #contact {
-    background-image: url("images/landscape.jpg");
+    background-image: url("../images/landscape.jpg");
     position: relative;
 }
 #contact-submit-button {
@@ -124,7 +120,7 @@ li {
 
 /* Title section */
 #title-section-div {
-    background-image: url("images/lights.jpg");
+    background-image: url("../images/lights.jpg");
     background-position: 50% 50%;
     padding-left: 13%;
 }
@@ -149,12 +145,12 @@ li {
 
 /* Book */
 #book-div {
-    background-image: url("images/book.jpg");
+    background-image: url("../images/book.jpg");
 }
 
 /* Social media */
 #social-media-div {
-    background-image: url("images/landscape2.jpg");
+    background-image: url("../images/landscape2.jpg");
     background-position: center center;
 }
 .icon-div {
@@ -251,7 +247,11 @@ li {
 }
 li {
     color: var(--darkblue);
+    padding: 10px;
 }
 li:nth-child(even) {
     color: var(--blue);
+}
+li:hover {
+    background-color: rgb(240, 248, 255, 0.5);
 }
