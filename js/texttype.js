@@ -20,5 +20,5 @@ window.onload = function() {
     
     setInterval(function() {
         typeText("smile-more");
-    }, 7000);
+    }, 5000);
 };
