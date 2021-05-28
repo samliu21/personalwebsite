@@ -7,6 +7,25 @@ $(function() {
         let regex = /^([\w-\.])+@([\w-\.])+[\w-]{2,4}?$/;
         return regex.test(email);
     }
+
+    // Simulate text typing
+    function typeText(textID) {
+        let textElement = $(`#${textID}`);
+        let text = textElement.text();
+        let stringToDisplay = "";
+        let currentPos = 0;
+        textElement.text("");
+
+        let addChar = function() {
+            stringToDisplay += text[currentPos];
+            ++currentPos;
+            textElement.text(stringToDisplay);
+            if (currentPos < text.length) {
+                setTimeout(addChar, 150);
+            }
+        }
+        addChar();
+    }
     
     // Add user to email list
     $("#contact-submit-button").on("click", function(event) {
@@ -24,8 +43,17 @@ $(function() {
 
         name.val("");
         email.val("");
-    })
+    });
 
     // Make name dip upon hover 
-    $("")
+    $(".bounce").on("mouseenter", function() {
+        $(this).animate({
+            top: "+=20vh",
+        }, 500);
+        $(this).animate({
+            top: "-=20vh",
+        }, 500);
+    });
+
+    setInterval(typeText("smile-more"), 7000);
 })

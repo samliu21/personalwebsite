@@ -30,7 +30,7 @@ input[type="text"], input[type="email"] {
     border: var(--darkblue) 2px solid;
     color: var(--darkblue);
 }
-span, div {
+div {
     overflow-y: hidden;
 }
 li {
@@ -193,6 +193,9 @@ li {
     overflow: hidden; 
     background-repeat: none;
     background-size: cover;
+}
+.bounce {
+    position: relative;
 }
 .big-title {
     font-size: 6vmax;
