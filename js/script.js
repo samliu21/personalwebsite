@@ -27,13 +27,21 @@ $(function() {
     });
 
     // Make name dip upon hover 
-    $(".bounce").on("mouseenter", function() {
-        $(this).animate({
-            top: "+=20vh",
-        }, 500);
-        $(this).animate({
-            top: "-=20vh",
-        }, 500);
-    });
+    let bounce = $(".bounce");
+    setInterval(function() {
+        // $(".bounce:hover") returns a list of all elements with class .bounce that are being hovered over
+        if ($(".bounce:hover").length != 0) {
+            bounce.animate({
+                top: "+=20vh",
+            }, 500);
+            bounce.animate({
+                top: "-=20vh",
+            }, 500, function() {
+                if (!isHover) {
+                    bounce.stop(true, false);
+                }
+            });
+        }
+    }, 50)
 
 })
